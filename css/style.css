@@ -42,6 +42,7 @@ body{
 header nav{
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 }
 header nav .item.sx .protect{
     color: green;
@@ -76,8 +77,7 @@ main .flex{
 main .flex .item{
     width: calc(20% - ( 30px / 5 ) );
     margin: 3px;
-    height: calc((100vh - 150px) / 5);   /*DA AGGIUSTARE************************************************************/
-    background-color: pink; 
+    height: calc((100vh - 150px) / 5 );   /*150 = 60+60 dell'header e footer +30px dei margin sommati*/
     border-radius: 10px;
     overflow: hidden;
 }
@@ -100,6 +100,49 @@ main .flex .item .name::before{
     font-weight: 600;
     color:rgba(255,0, 0, 0.7);
 }
+main .change-page{
+    height: 70px;
+    width: 40px;
+    flex-direction: column-reverse;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10px;
+    background-color: #070707;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    color: lightslategray;
+    font-size: 13px;
+    border: solid 1px black;
+}
+main .change-page i{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #2dbaff;
+}
 /* ////MAIN */
 /* FOOTER */
+footer .flex{
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #252729;
+    color: #aaaaab;
+}
+footer .flex .items{
+    /* height: 10px;
+    width: 10px; */
+    /* background-color: coral; */
+}
+footer .flex .items .end{
+    border-radius: 5px;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+}
 /* ////FOOTER */
