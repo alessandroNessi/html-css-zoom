@@ -61,6 +61,20 @@ header nav .item > *{
 }
 /* ////HEADER */
 /* MAIN */
+main .flex{
+    margin: auto;
+    max-width: 1600px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .flex .item{
+    width: calc(20% - ( 30px / 5 ) );
+    margin: 3px;
+    height: calc((100vh - 150px) / 5);   /*DA AGGIUSTARE************************************************************/
+    background-color: pink;    
+    border: 1px solid;
+    border-radius: 10px;
+}
 /* ////MAIN */
 /* FOOTER */
 /* ////FOOTER */
