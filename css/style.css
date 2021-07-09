@@ -1,0 +1,36 @@
+/* GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ////GENERAL */
+/* TYPO */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.flex{
+    display: flex;
+}
+.block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
+}
+/* ////TYPO */
+/* SPACING */
+header nav{
+    height: 60px;
+}
+/* ////SPACING */
+/* COLORS */
+
+/* ////COLORS */
+/* HEADER */
+
+/* ////HEADER */
+/* MAIN */
+/* ////MAIN */
+/* FOOTER */
+/* ////FOOTER */
