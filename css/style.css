@@ -20,15 +20,45 @@ body{
 }
 /* ////TYPO */
 /* SPACING */
-header nav{
+/* header nav{
     height: 60px;
-}
+} */
 /* ////SPACING */
 /* COLORS */
-
+.general-bgr{
+    background-color: #1a1a1a;
+}
+.white{
+    color: white;
+}
 /* ////COLORS */
 /* HEADER */
-
+header nav{
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .item.sx .protect{
+    color: green;
+    padding: 5px;
+}
+header nav .item.sx .recording{
+    vertical-align: middle;
+    padding: 10px;
+}
+header nav .item.sx> *{
+    margin: 5px 0 5px 5px;
+}
+header nav .item.dx> *{
+    margin: 5px 5px 5px 0;
+}
+header nav .item.sx > *{
+    background-color: #101010;
+}
+header nav .item > *{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #212122;
+}
 /* ////HEADER */
 /* MAIN */
 /* ////MAIN */
