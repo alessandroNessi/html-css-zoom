@@ -18,6 +18,12 @@ body{
 .inline-block{
     display: inline-block;
 }
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
 /* ////TYPO */
 /* SPACING */
 /* header nav{
@@ -71,9 +77,28 @@ main .flex .item{
     width: calc(20% - ( 30px / 5 ) );
     margin: 3px;
     height: calc((100vh - 150px) / 5);   /*DA AGGIUSTARE************************************************************/
-    background-color: pink;    
-    border: 1px solid;
+    background-color: pink; 
     border-radius: 10px;
+    overflow: hidden;
+}
+main .flex .item .name{
+    bottom: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+main .flex .item img{
+    width: 100%;
+    display: block;
+    object-position: center -100px;
+    /* object-fit: cover; */
+}
+main .flex .item .name::before{
+    content: "\f131";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    color:rgba(255,0, 0, 0.7);
 }
 /* ////MAIN */
 /* FOOTER */
