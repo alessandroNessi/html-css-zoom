@@ -13,7 +13,6 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
-
 .flex{
     display: flex;
 }
@@ -31,9 +30,6 @@ body{
 }
 /* ////TYPO */
 /* SPACING */
-/* header nav{
-    height: 60px;
-} */
 /* ////SPACING */
 /* COLORS */
 .general-bgr{
@@ -50,12 +46,20 @@ header nav{
     height: 60px;
 }
 header nav .item.sx .protect{
-    color: green;
+    color: #23d959;
     padding: 5px;
+    height: 25px;
+    align-self: center;
 }
 header nav .item.sx .recording{
-    vertical-align: middle;
-    padding: 10px 20px;
+    display: inline-flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+header nav .item.sx .recording p{
+    margin-left: 5px;
 }
 header nav .item.sx> *{
     margin: 5px 0 5px 5px;
@@ -83,7 +87,6 @@ main .flex .item{
     height: calc((100vh - 150px) / 5 );   /*150 = 60+60 dell'header e footer +30px dei margin sommati*/
     border-radius: 10px;
     overflow: hidden;
-    display: flex;
 }
 main .flex .item .name{
     bottom: 5px;
@@ -94,7 +97,9 @@ main .flex .item .name{
 }
 main .flex .item img{
     width: 100%;
-    align-self: center;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
 }
 main .flex .item .name::before{
     content: "\f131";
@@ -151,7 +156,6 @@ footer .flex .items .end{
     font-family: "Font Awesome 5 Free";
     font-size: 8px;
     font-weight: 600;
-    z-index: 2;
 }
 .upperNumber::after{
     position: absolute;
@@ -160,10 +164,44 @@ footer .flex .items .end{
     content: "34";
     font-size: 8px;
     font-weight: 400;
-    z-index: 1;
+}
+.upperCross::after{
+    position: absolute;
+    top: -2px;
+    right: calc(50% - 11px);
+    content: "+";
+    font-size: 8px;
+    font-weight: 900;
 }
 footer .items i{
     font-size: 20px;
+}
+footer .items .recordSquare{
+    width: 18px;
+    height: 18px;
+    background-color: #aaaaab;
+    margin-bottom: 2px;
+    border-radius: 2px;
+}
+footer .items .recordSquare i{
+    font-size: 9px;
+    color: #232527;
+    line-height: 18px;
+}
+footer .items .shareScreen{
+    color: #23d959;
+}
+footer .items .shareScreenSimbol{
+    width: 27px;
+    height: 18px;
+    background-color: #23d959;
+    margin-bottom: 2px;
+    border-radius: 2px;
+}
+footer .items .shareScreenSimbol i{
+    font-size: 9px;
+    color: #232527;
+    line-height: 18px;
 }
 footer .items .media-settings, footer .items .session-settings{
     padding: 10px;
