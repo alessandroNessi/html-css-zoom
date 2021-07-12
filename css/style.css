@@ -81,13 +81,17 @@ main{
 main .container{
     margin: auto;
     max-width: 1600px;
+    max-height: calc(100vh - 120px);
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
 }
 main .container .item{
     width: calc(20% - ( 30px / 5 ) );
+    /* min-width: 300px; */
+    /* min-height: 200px; */
     margin: 3px;
-    height: calc((100vh - 150px) / 5 );   /*150 = 60+60 dell'header e footer +30px dei margin sommati*/
+    height: calc((100vh - 144px) / 4 );   /*150 = 60+60 dell'header e footer +30px dei margin sommati*/
     border-radius: 10px;
     overflow: hidden;
 }
@@ -143,6 +147,9 @@ main .change-page i{
 }
 main .item .name i{
     color: #23d959;
+}
+footer .items.middle .hamburger{
+    display: none;
 }
 /* ////MAIN */
 /* FOOTER */
@@ -255,4 +262,38 @@ main .item input.changeMic{
 }
 .hidden{
     opacity: 0;
+}
+/***********************************************************************************************************************
+RESPONSIVE PART************************************************************************************************************************
+************************************************************************************************************************/
+@media screen and (max-width: 1200px) {
+    main .container .item{
+        width: calc(25% - ( 24px / 4 ) );
+    }
+}
+@media screen and (max-height: 700px) {
+    main .container .item{
+        height: calc((100vh - 138px) / 3 );   /*150 = 60+60 dell'header e footer +30px dei margin sommati*/
+    }
+}
+@media screen and (max-width: 700px) {
+    main .container .item{
+        width: calc(100% / 3 - ( 18px / 3 ) );
+    }
+    footer .items.middle>ul{
+        display: none;
+    }
+    footer .items.middle .hamburger{
+        display: block;
+    }
+}
+@media screen and (max-height: 500px) {
+    main .container .item{
+        height: calc((100vh - 132px) / 2 );   /*150 = 60+60 dell'header e footer +30px dei margin sommati*/
+    }
+}
+@media screen and (max-width: 500px) {
+    main .container .item{
+        width: calc(100% / 2 - ( 12px / 2 ) );
+    }
 }
